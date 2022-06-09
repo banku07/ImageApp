@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ImageSearchApp</string>
+    <string name="uploaded_by">Uploaded by</string>
+    <string name="image_tags">Image Tags</string>
+    <string name="user_id">UserId</string>
+    <string name="dowmnloads">Downloads</string>
+    <string name="image_resolution">Image Resolution</string>
+</resources>

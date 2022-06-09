@@ -1,0 +1,17 @@
+buildscript {
+    ext.kotlin_version = "1.5.21"
+    ext.compose_version = '1.0.2'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        def gradle = '7.0.2'
+        classpath "com.android.tools.build:gradle:$gradle"
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
+
+        def hilt = "2.38.1"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt"
+    }
+}

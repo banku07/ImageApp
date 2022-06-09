@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/imageListFragment">
+
+    <fragment
+        android:id="@+id/imageListFragment"
+        android:name="com.example.imagesearchapp.ui.fragments.ImageListFragment"
+        android:label="SearchImageApp"
+        tools:layout="@layout/fragment_image_list" >
+        <action
+            android:id="@+id/action_imageListFragment_to_imageDetailFragment"
+            app:destination="@id/imageDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageDetailFragment"
+        android:name="com.example.imagesearchapp.ui.fragments.ImageDetailFragment"
+        android:label="ImageDetails"
+        tools:layout="@layout/image_detail_layout" >
+        <action
+            android:id="@+id/action_imageDetailFragment_to_imageListFragment"
+            app:destination="@id/imageListFragment" />
+    </fragment>
+</navigation>
